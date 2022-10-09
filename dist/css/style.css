@@ -228,7 +228,7 @@ body {
   .header__icon {
     display: inline-block;
     position: relative;
-    z-index: 5;
+    z-index: 11;
     margin: 0 15px 0 0;
     width: 25px;
     height: 18px;
@@ -280,7 +280,7 @@ body {
     background: rgba(78, 78, 78, 0.8);
     transition: all 0.3s ease 0s;
     overflow: auto;
-    z-index: 0;
+    z-index: 10;
   }
 }
 @media (max-width: 992px) and (max-width: 479px) {
@@ -411,6 +411,11 @@ body {
   text-align: center;
   margin: 0 auto 70px;
   width: 35%;
+}
+@media (max-width: 1632px) {
+  .how__text {
+    width: 100%;
+  }
 }
 .how__video-block {
   margin: 0 0 150px 0;
@@ -547,5 +552,111 @@ body {
   .block-video__link span {
     left: calc(6.8% + 56px);
     bottom: -21px;
+  }
+}
+
+.project__body {
+  padding: 120px 0 0 0;
+}
+.project__title {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.project__text {
+  text-align: center;
+  margin: 0 0 160px 0;
+  position: relative;
+}
+.project__text:before, .project__text:after {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 5px;
+  background: #58A9A5;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.project__text:before {
+  bottom: -51px;
+}
+.project__text:after {
+  bottom: -66px;
+}
+.project__row {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .project__row {
+    flex-direction: column;
+  }
+}
+.project__column {
+  flex: 0 1 28%;
+}
+@media (max-width: 992px) {
+  .project__card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 50px;
+  }
+}
+@media (max-width: 479px) {
+  .project__card {
+    padding: 0 20px 40px;
+  }
+}
+.project__card-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #58A9A5;
+  margin: 0 0 5px 0;
+}
+@media (max-width: 992px) {
+  .project__card-title {
+    order: 1;
+  }
+}
+@media (max-width: 479px) {
+  .project__card-title {
+    font-size: 28px;
+  }
+}
+.project__card-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #486958;
+}
+@media (max-width: 992px) {
+  .project__card-text {
+    order: 2;
+  }
+}
+@media (max-width: 479px) {
+  .project__card-text {
+    font-size: 18px;
+  }
+}
+.project__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 50% 50%;
+  margin: 35px 0 0 0;
+  padding: 0 0 100% 0;
+}
+@media (max-width: 992px) {
+  .project__img {
+    order: 3;
+  }
+}
+.project__img-circle {
+  border-radius: 50%;
+  margin: 0 0 35px 0;
+}
+@media (max-width: 992px) {
+  .project__img-circle {
+    margin: 35px 0 0 0;
   }
 }
