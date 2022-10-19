@@ -117,7 +117,7 @@ body.lock {
 }
 
 .header {
-  padding: 85px 0 105px;
+  padding: 60px 0 80px;
 }
 @media (max-width: 992px) {
   .header {
@@ -205,31 +205,6 @@ body.lock {
   transform: translate(-50%, 0);
   border-radius: 3px;
   transition: all 0.3s linear;
-}
-
-.btn {
-  display: block;
-  background: #58A9A5;
-  font-size: 25px;
-  font-weight: 500;
-  color: #fff;
-  border-radius: 15px;
-  padding: 21px 88px;
-  transition: background 0.3s linear;
-  text-align: center;
-  white-space: nowrap;
-}
-@media (max-width: 1632px) {
-  .btn {
-    font-size: 20px;
-    padding: 21px 55px;
-  }
-}
-.btn:hover {
-  color: #58A9A5;
-  background: #fff;
-  border: 3px solid #58A9A5;
-  padding: 18px 85px;
 }
 
 @media (max-width: 992px) {
@@ -344,6 +319,42 @@ body.lock {
   .text {
     font-size: 18px;
   }
+}
+
+.btn {
+  display: block;
+  background: #58A9A5;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 15px;
+  padding: 21px 88px;
+  transition: background 0.3s linear;
+  text-align: center;
+  white-space: nowrap;
+}
+@media (max-width: 1632px) {
+  .btn {
+    font-size: 20px;
+    padding: 21px 55px;
+  }
+}
+.btn:hover {
+  color: #58A9A5;
+  background: #fff;
+  border: 3px solid #58A9A5;
+  padding: 18px 85px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main__body {
@@ -800,7 +811,7 @@ body.lock {
 }
 
 .contact__body {
-  padding: 240px 0 320px;
+  padding: 240px 0;
   display: flex;
 }
 @media (max-width: 1632px) {
@@ -911,4 +922,42 @@ body.lock {
     padding: 20px;
     font-size: 18px;
   }
+}
+
+.checkbox {
+  display: inline-block;
+  padding: 0 1.1em;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 150%;
+  color: #757575;
+}
+.checkbox__input:checked + .checkbox__box:before {
+  content: "";
+  position: absolute;
+  left: 26%;
+  top: 0;
+  width: 0.3em;
+  height: 0.5em;
+  border: solid #58A9A5;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.checkbox__input:focus + .checkbox__box {
+  box-shadow: 0 0 0 2px #58A9A5;
+}
+.checkbox__input:disabled + .checkbox__box {
+  border: 2px solid #949494;
+}
+.checkbox__input:disabled:checked + .checkbox__box:before {
+  border: solid #949494;
+  border-width: 0 3px 3px 0;
+}
+.checkbox__box {
+  position: absolute;
+  margin: 0.35em 0 0 -1.1em;
+  width: 0.8em;
+  height: 0.8em;
+  border: 2px solid #757575;
+  border-radius: 5px;
 }

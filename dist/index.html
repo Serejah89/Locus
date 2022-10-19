@@ -196,7 +196,19 @@
 					<input class="contact__input" type="text" name="name" tabindex="1" placeholder="Full name">
 					<input class="contact__input" type="text" name="email" tabindex="2" placeholder="Email address">
 					<textarea class="contact__input contact__input_2" name="description" tabindex="3" placeholder="Description" ></textarea>
-					<button class="contact__button btn">Send now</button>
+					<div class="contact__check-box">
+						<label class="contact__checkbox checkbox">
+							<input class="checkbox__input visually-hidden" type="checkbox" name="answer" tabindex="4">
+							<span class="checkbox__box"></span>
+							I want an answer
+						</label>
+						<label class="contact__checkbox checkbox">
+							<input class="checkbox__input visually-hidden" type="checkbox" name="designer" tabindex="5">
+							<span class="checkbox__box"></span>
+							I am a designer
+						</label>
+					</div>
+					<button class="contact__button btn" tabindex="6">Send now</button>
 				</form>
 			</div>
 		</div>
